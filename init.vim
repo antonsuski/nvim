@@ -1,8 +1,9 @@
 set ignorecase
 set list
-
-set sidescroll=5
+set scrolloff=4
 set cmdheight=3
+set number
+set iskeyword-=_
 
 
 filetype on
