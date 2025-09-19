@@ -1,7 +1,7 @@
 # Overview
 This is an easy nvim setup deploy script.
 
-# Project layout:
+# Project layout
 ```
 |-config/
 | |_nvim.lua
