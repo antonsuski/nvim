@@ -1,6 +1,7 @@
 #!/bin/sh
 
-FILE='init.lua'
+SRC_CONFIG_DIR='config'
+FILE=${SRC_CONFIG_DIR}/'init.lua'
 LSP_PLUGIN='nvim-lspconfig'
 UNIX=${HOME}/'.config/nvim'
 
