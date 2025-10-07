@@ -1,11 +1,12 @@
 vim.lsp.enable('clangd')
 
-vim.cmd("set ignorecase")
-vim.cmd("set list")
-vim.cmd("set scrolloff=4")
-vim.cmd("set cmdheight=3")
-vim.cmd("set number")
-vim.cmd("set iskeyword-=_")
+vim.opt.ignorecase = true
+vim.opt.list = true
+vim.opt.scrolloff = 4
+vim.opt.cmdheight = 3
+vim.opt.number = true
+
 vim.cmd("filetype on")
 vim.cmd("filetype plugin indent on")
+vim.cmd("set iskeyword-=_")
 
