@@ -16,12 +16,12 @@ echo 'Checking already existed configuration ...'
 
 if test -d ${DIR}; then
 	echo 'NeoVIM directory exists'
-	FINAL_RES_MSG='Redploy done'
+	FINAL_RES_MSG='Redeploy done.'
 else
 	echo 'There is no NeoVIM root directory'
 	echo 'Creating nvim config directory ...'
 	mkdir -pv ${DIR}
-	FINAL_RES_MSG='Deploy done'
+	FINAL_RES_MSG='Deploy done.'
 fi
 
 
@@ -34,7 +34,7 @@ else
 fi
 
 echo "Copying configuration ... ${SRC_CONFIG_DIR}/${FILE} to ${TARGET_FILE}"
-cp "${SRC_CONFIG_DIR}/${FILE}" "${TARGET_FILE}"
+cp -T -r "${SRC_CONFIG_DIR}" "${DIR}"
 
 echo 'Checking of existed nvim-lspconfig plugin ...'
 
